@@ -49,9 +49,9 @@ class GNN(Module):
         return hidden
 
 
-class MB_SR(Module):
+class APANet(Module):
     def __init__(self, opt, n_item, n_act):
-        super(MB_SR, self).__init__()
+        super(APANet, self).__init__()
         self.hidden_size = opt.hidden_size
         self.n_item = n_item
         self.n_act = n_act

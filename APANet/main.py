@@ -53,7 +53,7 @@ def main():
         opt.l = lamda[opt.dataset] 
 
     seed_torch(int(opt.seed))
-    model = trans_to_cuda(MB_SR(opt, n_item, n_act))
+    model = trans_to_cuda(APANet(opt, n_item, n_act))
     results = []
     start = time.time()
     best_result = [0, 0]
